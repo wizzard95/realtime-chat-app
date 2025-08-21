@@ -1,0 +1,12 @@
+# Node.js
+node_modules/
+npm-debug.log
+.env
+
+# Build de React
+client/build/
+client/node_modules/
+
+# Logs
+logs
+*.log
