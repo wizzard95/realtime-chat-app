@@ -1,10 +1,12 @@
 // client/src/App.jsx
 import React, { useEffect, useState } from 'react';
-import io from 'socket.io-client';
+import { io } from 'socket.io-client';
 import MainLayout from './components/MainLayout';
 
-const socket = io('http://localhost:3000', {
+// 👇 usamos la URL del backend desde .env
+const socket = io(import.meta.env.VITE_API_URL, {
   autoConnect: false,
+  withCredentials: true,
 });
 
 function App() {
@@ -91,4 +93,3 @@ function App() {
 }
 
 export default App;
-
