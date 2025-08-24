@@ -140,17 +140,3 @@ client/
 | `chatHistory` | Historial de mensajes de sala | `Array<Message>` |
 | `message` | Nuevo mensaje recibido | `{username, content, timestamp}` |
 
-## 🗄️ MODELO DE DATOS
-
-### Esquema de Mensaje
-
-```javascript
-{
-  username: String,      // Usuario que envía el mensaje
-  content: String,       // Contenido del mensaje
-  room: String,          // Sala donde se envía
-  timestamp: Date,       // Fecha y hora de envío
-  createdAt: Date,       // Timestamp de creación (automático)
-  updatedAt: Date        // Timestamp de actualización (automático)
-}
-```
